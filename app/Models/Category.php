@@ -11,7 +11,8 @@ class Category extends Model
     use SoftDeletes;
     use TraitUuid;
 
-    protected $increments = false;
+    public $incrementing = false;
+    public $keyType = 'string';
 
     protected $fillable = [
         "name",

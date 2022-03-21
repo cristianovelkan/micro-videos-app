@@ -11,7 +11,8 @@ class Genre extends Model
     use SoftDeletes;
     use TraitUuid;
 
-    protected $increments = false;
+    protected $incrementing = false;
+    protected $keyType = 'string';
 
     protected $fillable = [
         "name",
